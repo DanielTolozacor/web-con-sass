@@ -1,5 +1,15 @@
-.fotodebeso{
+.fotodebeso {
     
     display: flex;
-    justify-content:center ;
-}
+    justify-content: center;
+    align-items: center;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+} }

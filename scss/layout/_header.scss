@@ -24,14 +24,14 @@ nav{bacground-color: #6b6405;
   width: 100%;
   padding: 30px 0px}
   .header-nav{
-    /*@include flex(row,nowrap,center,center,50px);*/
+    @include flex(row,nowrap,center,center,10px);
      
-    display: flex;
+    /*display: flex;
     list-style: none;
       
       justify-content: center;
       flex-direction:row;
-      gap: 50px;
+      gap: 50px;*/
       
       /*
       
