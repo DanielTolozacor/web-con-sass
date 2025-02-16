@@ -1,0 +1,51 @@
+footer {
+    background-color: #020202;
+    padding: 20px;
+    text-align: center;
+    
+            
+        }
+    
+    
+
+    a{color: #c0b518;
+        display: block;
+        margin-bottom: 10px;}
+        p{ color: #fff;}
+
+        .social-mediaa {
+            display: flex;
+            gap: 1rem;
+          
+            a {
+              font-size: 2rem;
+              color: inherit; /* Color inherente al contenedor */
+              transition: color 0.3s ease;
+          
+              &.facebook {
+                color: #3b5998;
+          
+                &:hover {
+                  color: blue; /* Color azul para Facebook al pasar el cursor */
+                }
+              }
+          
+              &.instagram {
+                color: #e1306c;
+          
+                &:hover {
+                  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Colores de Instagram */
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+              }
+          
+              &.whatsapp {
+                color: #25d366;
+          
+                &:hover {
+                  color: #128c7e; /* Color de WhatsApp al pasar el cursor */
+                }
+              }
+            }
+          }
