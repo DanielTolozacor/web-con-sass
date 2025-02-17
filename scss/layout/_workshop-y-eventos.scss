@@ -12,10 +12,10 @@ table {
     background: url('https://www.transparenttextures.com/patterns/black-paper.png');
  font-size: auto;}
 th, td {
-    border: 2px solid black;
+    border: 2px solid $colornegro;
     padding: 10px;
     text-align: center;
-    color: black;
+    color: $colornegro;
 }
 th {
     background-color: #f4c27a;
