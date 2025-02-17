@@ -1,3 +1,4 @@
+
 .top-section {
     display: flex;
     justify-content: space-between;
@@ -8,26 +9,24 @@
     gap: 20px;
     max-width: 1000px;
     margin: auto;
+
+    .image {
+        width: 80%;
+
+        img {
+            width: 80%;
+            height: 600px;
+        }
+    }
+
+    .info {
+        width: 80%;
+        background-color: black;
+        color: white;
+        padding: 50px;
+        text-align: left;
+    }
 }
-
-
-.image {
-    width: 50%;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-}
-
-.info {
-    width: 50%;
-    background-color: black;
-    color: white;
-    padding: 100px;
-    text-align: left;
-}
-
 
 .courses {
     display: flex;
@@ -36,25 +35,30 @@
     margin-top: 20px;
     max-width: 1000px;
     margin: auto;
-}
 
-.courses:hover{filter: drop-shadow(2px 2px 5px rgb(177, 16, 137) ) }
+    &:hover {
+        filter: drop-shadow(2px 2px 5px rgb(177, 16, 137));
+    }
 
+    .course-box {
+        background-color: #a9ad97;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
 
-.course-box {
-    background-color: #a9ad97;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    border-radius: 5px;
-}
+        .button {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 14px;
 
-.button {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 14px;
+            &:hover {
+                background-color: #333; /* Ejemplo de cambio de color en hover */
+            }
+        }
+    }
 }
