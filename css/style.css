@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: none;
 }
 
 body {
@@ -31,7 +31,7 @@ header {
   position: relative;
 }
 header .header-logo img {
-  width: 500px;
+  width: 400px;
   padding-left: 60px;
   display: flex;
   flex-direction: column;
@@ -132,21 +132,18 @@ header a:hover {
   max-width: 1000px;
   margin: auto;
 }
-
-.image {
-  width: 50%;
+.top-section .image {
+  width: 80%;
 }
-
-.image img {
-  width: 100%;
-  height: auto;
+.top-section .image img {
+  width: 80%;
+  height: 600px;
 }
-
-.info {
-  width: 50%;
+.top-section .info {
+  width: 80%;
   background-color: black;
   color: white;
-  padding: 100px;
+  padding: 50px;
   text-align: left;
 }
 
@@ -158,20 +155,17 @@ header a:hover {
   max-width: 1000px;
   margin: auto;
 }
-
 .courses:hover {
   filter: drop-shadow(2px 2px 5px rgb(177, 16, 137));
 }
-
-.course-box {
+.courses .course-box {
   background-color: #a9ad97;
   padding: 20px;
   width: 100%;
   text-align: center;
   border-radius: 5px;
 }
-
-.button {
+.courses .course-box .button {
   display: inline-block;
   background-color: black;
   color: white;
@@ -179,6 +173,9 @@ header a:hover {
   margin-top: 10px;
   text-decoration: none;
   font-size: 14px;
+}
+.courses .course-box .button:hover {
+  background-color: #333; /* Ejemplo de cambio de color en hover */
 }
 
 .contact-form {
@@ -340,7 +337,7 @@ button {
   width: 100%;
   padding: 10px;
   margin-top: 15px;
-  background: #d40000;
+  background: #020202;
   color: white;
   border: none;
   border-radius: 5px;
@@ -549,6 +546,33 @@ p {
 }
 .contact-form .form-container form button {
   padding: 8px;
+}
+
+/*dancing*/
+.top-section {
+  flex-direction: column;
+  align-items: center;
+}
+.top-section .image {
+  width: 100%;
+  height: auto;
+}
+.top-section .image img {
+  width: 100%;
+  height: auto;
+}
+.top-section .info {
+  flex: 1 1 80%;
+  margin-bottom: 20px;
+}
+
+.courses {
+  flex-direction: column;
+  align-items: center;
+}
+.courses .course-box {
+  flex: 1 1 100%;
+  margin: 10px 0;
 }
 
 /*@mixin flex($row,$wrap,$justify,$alingn,$gap)
