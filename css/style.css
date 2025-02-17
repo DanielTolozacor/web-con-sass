@@ -532,6 +532,25 @@ p {
   }
 }
 /*contactos*/
+.contact-form {
+  flex-direction: column;
+}
+.contact-form .image-container {
+  margin-bottom: 10px;
+}
+.contact-form .form-container {
+  padding: 5px;
+}
+.contact-form .form-container form h1, .contact-form .form-container form p {
+  font-size: 14px;
+}
+.contact-form .form-container form label, .contact-form .form-container form input, .contact-form .form-container form textarea {
+  font-size: 14px;
+}
+.contact-form .form-container form button {
+  padding: 8px;
+}
+
 /*@mixin flex($row,$wrap,$justify,$alingn,$gap)
 {display: flex;
 flex-direction: $row;

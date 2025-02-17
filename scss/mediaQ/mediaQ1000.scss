@@ -96,7 +96,31 @@ td {
 }
 
 /*contactos*/
+.contact-form {
+    flex-direction: column;
 
+    .image-container {
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+        padding: 5px;
+
+        form {
+            h1, p {
+                font-size: 14px;
+            }
+
+            label, input, textarea {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 8px;
+            }
+        }
+    }
+}
 
 /*@mixin flex($row,$wrap,$justify,$alingn,$gap)
 {display: flex;
