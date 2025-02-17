@@ -233,7 +233,7 @@ header a:hover {
   margin-top: 10px;
   padding: 10px;
   background-color: #007bff;
-  color: white;
+  color: color #f5eaea;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -287,7 +287,6 @@ header a:hover {
         gap: 10px;
         margin: 00px;
         flex-basis: 100%;
-
         max-width: 500px;
         padding: 20px;
         background: #f8f8f8;
@@ -337,8 +336,8 @@ button {
   width: 100%;
   padding: 10px;
   margin-top: 15px;
-  background: #020202;
-  color: white;
+  background: color #020202;
+  color: color #f5eaea;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -358,6 +357,10 @@ button {
   color: #007bff;
 }
 
+h2 {
+  font-size: 4h2;
+}
+
 table {
   width: 100%;
   margin: 10px auto;
@@ -367,10 +370,10 @@ table {
 }
 
 th, td {
-  border: 2px solid black;
+  border: 2px solid color #020202;
   padding: 10px;
   text-align: center;
-  color: black;
+  color: color #020202;
 }
 
 th {
@@ -399,7 +402,7 @@ main h1 {
 }
 
 footer {
-  background-color: #020202;
+  background-color: color #020202;
   padding: 20px;
   text-align: center;
 }
