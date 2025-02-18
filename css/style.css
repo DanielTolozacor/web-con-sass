@@ -487,50 +487,56 @@ p {
   header .header-nav a {
     font-size: 20px;
   }
-  header main .fotodebeso {
+  main .fotodebeso {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
-  header main img {
+  main img {
     max-width: 100%;
     height: auto;
   }
-  footer {
-    padding: 10px;
-  }
-  footer a {
-    font-size: 14px;
-  }
-  footer p {
-    display: none;
-  }
-  /* workshop*/
-  table {
-    width: 100%;
-    margin: 10px auto;
-    border-collapse: collapse;
-    background: url("https://www.transparenttextures.com/patterns/black-paper.png");
-    font-size: 10px;
-  }
-  th, td {
-    border: 2px solid black;
-    padding: 10px;
-    text-align: center;
-    color: black;
-  }
-  th {
-    background-color: #f4c27a;
-    font-weight: bold;
-  }
-  td {
-    background-color: #ffe7c0;
-  }
-  .bold {
-    font-weight: bold;
-  }
 }
+footer {
+  padding: 10px;
+}
+footer a {
+  font-size: 14px;
+}
+footer p {
+  display: none;
+}
+
+/* workshop*/
+table {
+  width: 100%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  background: url("https://www.transparenttextures.com/patterns/black-paper.png");
+  font-size: 10px;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+th {
+  background-color: #f4c27a;
+  font-weight: bold;
+}
+
+td {
+  background-color: #ffe7c0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /*contactos*/
 .contact-form {
   flex-direction: column;
