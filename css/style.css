@@ -125,8 +125,8 @@ header a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 20px;
+  background-color: color #020202;
+  padding: 0%;
   border: 1px solid #ccc;
   gap: 20px;
   max-width: 1000px;
@@ -136,8 +136,8 @@ header a:hover {
   width: 80%;
 }
 .top-section .image img {
-  width: 80%;
-  height: 600px;
+  width: 100%;
+  height: auto;
 }
 .top-section .info {
   width: 80%;
@@ -208,6 +208,7 @@ header a:hover {
   padding: 20px;
   box-shadow: 0 2px 4px rgba(2, 2, 2, 0.1);
   text-align: left;
+  color: aliceblue;
 }
 .contact-form .form-container form {
   display: flex;
@@ -497,99 +498,83 @@ p {
     max-width: 100%;
     height: auto;
   }
+  footer {
+    padding: 10px;
+  }
+  footer a {
+    font-size: 14px;
+  }
+  footer p {
+    display: none;
+  }
+  /* workshop*/
+  table {
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background: url("https://www.transparenttextures.com/patterns/black-paper.png");
+    font-size: 10px;
+  }
+  th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    color: black;
+  }
+  th {
+    background-color: #f4c27a;
+    font-weight: bold;
+  }
+  td {
+    background-color: #ffe7c0;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  /*contactos*/
+  .contact-form {
+    flex-direction: column;
+  }
+  .contact-form .image-container {
+    margin-bottom: 10px;
+  }
+  .contact-form .form-container {
+    padding: 5px;
+  }
+  .contact-form .form-container form h1, .contact-form .form-container form p {
+    font-size: 14px;
+  }
+  .contact-form .form-container form label, .contact-form .form-container form input, .contact-form .form-container form textarea {
+    font-size: 14px;
+  }
+  .contact-form .form-container form button {
+    padding: 8px;
+  }
+  /*dancing*/
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-section .image {
+    width: 100%;
+    height: auto;
+  }
+  .top-section .image img {
+    width: 100%;
+    height: auto;
+  }
+  .top-section .info {
+    flex: 1 1 80%;
+    margin-bottom: 20px;
+  }
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+  .courses .course-box {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
 }
-footer {
-  padding: 10px;
-}
-footer a {
-  font-size: 14px;
-}
-footer p {
-  display: none;
-}
-
-/* workshop*/
-table {
-  width: 100%;
-  margin: 10px auto;
-  border-collapse: collapse;
-  background: url("https://www.transparenttextures.com/patterns/black-paper.png");
-  font-size: 10px;
-}
-
-th, td {
-  border: 2px solid black;
-  padding: 10px;
-  text-align: center;
-  color: black;
-}
-
-th {
-  background-color: #f4c27a;
-  font-weight: bold;
-}
-
-td {
-  background-color: #ffe7c0;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-/*contactos*/
-.contact-form {
-  flex-direction: column;
-}
-.contact-form .image-container {
-  margin-bottom: 10px;
-}
-.contact-form .form-container {
-  padding: 5px;
-}
-.contact-form .form-container form h1, .contact-form .form-container form p {
-  font-size: 14px;
-}
-.contact-form .form-container form label, .contact-form .form-container form input, .contact-form .form-container form textarea {
-  font-size: 14px;
-}
-.contact-form .form-container form button {
-  padding: 8px;
-}
-
-/*dancing*/
-.top-section {
-  flex-direction: column;
-  align-items: center;
-}
-.top-section .image {
-  width: 100%;
-  height: auto;
-}
-.top-section .image img {
-  width: 100%;
-  height: auto;
-}
-.top-section .info {
-  flex: 1 1 80%;
-  margin-bottom: 20px;
-}
-
-.courses {
-  flex-direction: column;
-  align-items: center;
-}
-.courses .course-box {
-  flex: 1 1 100%;
-  margin: 10px 0;
-}
-
-/*@mixin flex($row,$wrap,$justify,$alingn,$gap)
-{display: flex;
-flex-direction: $row;
-flex-wrap: $wrap;
-justify-content: $justify;
-align-items: center;
-gap: $gap;}*/
 
 /*# sourceMappingURL=style.css.map */
