@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beginner Argentine Tango Courses & Classes</title>
 
+    <link rel="icon" href="../assets/imagenes/favicon.ico" type="image/x-icon">
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Start dancing Argentine Tango with Daniel and Goldie. Join our beginner courses and become a tango dancer.">
+    <meta name="keywords" content="Tango, Tango Classes, Beginner Courses, London, Dance">
+    <meta name="author" content="Daniel and Goldie">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Beginner Argentine Tango Courses & Classes">
+    <meta property="og:description" content="Join our beginner courses and become a tango dancer with Daniel and Goldie.">
+    <meta property="og:image" content="https://yourwebsite.com/images/share-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/beginner-tango-classes.html">
+    <meta property="og:image" content="https://ibb.co/Gvktn7BD">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trustedscripts.example.com; object-src 'none'; style-src 'self' https://trustedstyles.example.com;">
+    
+    <!-- Preconnect and Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" ref="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="bodystart">
@@ -89,5 +106,19 @@
     </div>
     <a href="https://www.figma.com/design/j5DMiO8YbGbS9airn8IqGQ/Untitled?node-id=27-158&t=N9CSktwtqhDpmSpI-1">MI Figma</a>
     <p>mi figma link:  https://www.figma.com/design/j5DMiO8YbGbS9airn8IqGQ/Untitled?node-id=27-158&t=N9CSktwtqhDpmSpI-1</p></footer>
+
+<!-- Service Worker Files -->
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                console.log('Service Worker registered successfully:', registration.scope);
+            }, function(err) {
+                console.log('Service Worker registration failed:', err);
+            });
+        });
+    }
+</script>
+
 </body>
 </html>

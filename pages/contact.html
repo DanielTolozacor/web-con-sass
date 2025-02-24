@@ -4,8 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classes London Tango Show Arte Teacher </title>
+    <title>Classes London Tango Show Arte Teacher</title>
 
+    <link rel="icon" href="../assets/imagenes/favicon.ico" type="image/x-icon">
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Contact Daniel and Goldie for beginner Argentine Tango courses and classes in London. Learn to dance tango from professionals.">
+    <meta name="keywords" content="Tango, Tango Classes, London, Dance, Contact, Argentine Tango">
+    <meta name="author" content="Daniel and Goldie">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Classes London Tango Show Arte Teacher">
+    <meta property="og:description" content="Contact Daniel and Goldie for beginner Argentine Tango courses and classes in London.">
+    <meta property="og:image" content="https://ibb.co/Gvktn7BD">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trustedscripts.example.com; object-src 'none'; style-src 'self' https://trustedstyles.example.com;">
+    
+    <!-- Preconnect and Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
@@ -25,6 +42,8 @@
                 <li><a href="./start-dancing.html">Start-Dancing</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="./home.html">Home</a></li>
+
+                
                 <li><a href="./workshop-y-eventos.html">Workshop-y-Eventos</a></li>
                 
             </ul>
@@ -78,5 +97,18 @@
         <a href="https://www.figma.com/design/j5DMiO8YbGbS9airn8IqGQ/Untitled?node-id=27-158&t=N9CSktwtqhDpmSpI-1">MI Figma</a>
         <p>mi figma link:  https://www.figma.com/design/j5DMiO8YbGbS9airn8IqGQ/Untitled?node-id=27-158&t=N9CSktwtqhDpmSpI-1</p>
     </footer>
+
+    <!-- Service Worker Files -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('Service Worker registered successfully:', registration.scope);
+                }, function(err) {
+                    console.log('Service Worker registration failed:', err);
+                });
+            });
+        }
+    </script>
 </body>
 </html>
