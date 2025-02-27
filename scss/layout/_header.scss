@@ -47,12 +47,12 @@ list-style: none;
     }
 
 a{ 
-    font-size: 30px;
-    padding: 20px;
+    font-size: 10px;
+    padding: 10px;
     color: rgb(250, 248, 248);
     &:hover{background-color:none;
       color:#c0b518;}
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Roboto", serif;}
     
     }
@@ -70,5 +70,6 @@ a{
   border-radius: 0px 0px 25px 25px;
   
   button{padding: 20px 30px ;} 
-  a{color: #c0b518;}
+  a{color: #c0b518;
+  ;}
 }
