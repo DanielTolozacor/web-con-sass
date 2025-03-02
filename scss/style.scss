@@ -1,32 +1,27 @@
-
 /*1 utilitis*/
-@import"./utilities/maps";
-@import"./utilities/variables";
-@import"./utilities/mixin.scss";
+@import "./utilities/maps";
+@import "./utilities/variables";
+@import "./utilities/mixin.scss";
 
 /*2 base*/
-@import"./base/reset";
-@import"./base/tipografias";
-
-
+@import "./base/reset";
+@import "./base/tipografias";
 
 /*3 layout*/
-@import"./layout/header";
-@import"./layout/main-index";
-@import"./layout/main-start-dancing";
-@import"./layout/main-contact";
-@import"./layout/workshop-y-eventos";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-start-dancing";
+@import "./layout/main-contact";
+@import "./layout/workshop-y-eventos";
+@import "./layout/main";
+@import "./layout/footer";
+@import 'layout/main_home';
 
-@import"./layout/main";
-@import"./layout/footer";
 /*4 components*/
-
-@import"./components/navbar";
-
-
+@import "./components/navbar";
 
 /*5 mediaq*/
-
-@import"./mediaQ/mediaQ1000.scss";
+@import "./mediaQ/mediaQ1000.scss";
+@import 'layout/main_home';
 
 

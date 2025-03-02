@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*1 utilitis*/
 /*2 base*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
@@ -118,9 +119,6 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 .fotodebeso img {
@@ -150,7 +148,7 @@ header a:hover {
 }
 .hola .background-container .overlay-content {
   position: absolute;
-  top: 350px;
+  top: 200px; /* Adjusted to move videos higher */
   left: 10px;
   display: flex;
   flex-direction: column;
@@ -158,6 +156,7 @@ header a:hover {
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
+  object-fit: cover;
 }
 .hola .background-container video {
   max-width: 80%;
@@ -492,6 +491,83 @@ p {
   color: #128c7e; /* Color de WhatsApp al pasar el cursor */
 }
 
+.main_home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+.main_home .background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main_home .background-container .background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_home .background-container .left, .main_home .background-container .right {
+  position: absolute;
+  padding: 20px;
+  transition: opacity 0.2s ease;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0); /* Opcional, para darle un fondo traslúcido */
+  box-sizing: border-box;
+  overflow-y: auto; /* Habilitar el scroll vertical */
+  max-height: 80vh; /* Limitar la altura máxima para permitir el scroll */
+  margin: 10px;
+  font-size: 25px; /* Corregir el tamaño de fuente */
+}
+.main_home .background-container .left p, .main_home .background-container .right p {
+  text-align: center; /* Center the text of the paragraphs */
+  font-size: 30px; /* Increase font size by 5px */
+}
+.main_home .background-container .left {
+  top: 10px;
+  left: 10px;
+  max-width: 100%; /* O el tamaño que necesites */
+  height: 300px;
+  direction: ltr; /* Ensure scroll is at the beginning of the text */
+  text-align: left; /* Ensure text is aligned to the left */
+  overflow-x: hidden; /* Hide horizontal scroll */
+  overflow-y: scroll; /* Ensure vertical scroll is visible */
+  scrollbar-gutter: stable both-edges; /* Ensure scroll bar is on the left */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+.main_home .background-container .right {
+  top: 400px;
+  right: 10px;
+  max-width: 100%; /* Disminuir el largo del texto derecho a un 50% */
+  height: 300px;
+}
+
+.left:hover ~ .right {
+  opacity: 0;
+}
+
+.right:hover ~ .left {
+  opacity: 0;
+}
+
+.right {
+  display: block;
+}
+
+.left {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.left:not(:hover), .right:not(:hover) {
+  font-size: 25px; /* Ensure font size remains the same */
+}
+
 /*4 components*/
 /*5 mediaq*/
 @media (max-width: 850px) {
@@ -521,7 +597,6 @@ p {
     right: 0px;
     border-radius: 25px 25px 25px 25px;
     padding: none;
-    text-size-adjust: 20xp;
   }
   header .header-nav {
     flex-direction: column;
@@ -610,6 +685,82 @@ p {
   main.hola .background-container .overlay-content {
     padding: 15px;
   }
+}
+.main_home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+.main_home .background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main_home .background-container .background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_home .background-container .left, .main_home .background-container .right {
+  position: absolute;
+  padding: 20px;
+  transition: opacity 0.2s ease;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0); /* Opcional, para darle un fondo traslúcido */
+  box-sizing: border-box;
+  overflow-y: auto; /* Habilitar el scroll vertical */
+  max-height: 80vh; /* Limitar la altura máxima para permitir el scroll */
+  margin: 10px;
+  font-size: 25px; /* Corregir el tamaño de fuente */
+}
+.main_home .background-container .left p, .main_home .background-container .right p {
+  text-align: center; /* Center the text of the paragraphs */
+  font-size: 30px; /* Increase font size by 5px */
+}
+.main_home .background-container .left {
+  top: 10px;
+  left: 10px;
+  max-width: 100%; /* O el tamaño que necesites */
+  height: 300px;
+  direction: ltr; /* Ensure scroll is at the beginning of the text */
+  text-align: left; /* Ensure text is aligned to the left */
+  overflow-x: hidden; /* Hide horizontal scroll */
+  overflow-y: scroll; /* Ensure vertical scroll is visible */
+  scrollbar-gutter: stable both-edges; /* Ensure scroll bar is on the left */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+.main_home .background-container .right {
+  top: 400px;
+  right: 10px;
+  max-width: 100%; /* Disminuir el largo del texto derecho a un 50% */
+  height: 300px;
+}
+
+.left:hover ~ .right {
+  opacity: 0;
+}
+
+.right:hover ~ .left {
+  opacity: 0;
+}
+
+.right {
+  display: block;
+}
+
+.left {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.left:not(:hover), .right:not(:hover) {
+  font-size: 25px; /* Ensure font size remains the same */
 }
 
 /*# sourceMappingURL=style.css.map */
